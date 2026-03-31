@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dbiechap6mctb" path="res://Assets/Tilesets/Buildings/Premade_houses3.png" id="3_tgdjq"]
 [ext_resource type="Texture2D" uid="uid://bj6lb8gqtdwxd" path="res://Assets/Tilesets/Buildings/Premade_houses4.png" id="4_ih7i4"]
 [ext_resource type="Texture2D" uid="uid://dd73hbduwmaxn" path="res://Assets/Tilesets/Buildings/Premade_houses.png" id="5_3xg8v"]
+[ext_resource type="Texture2D" uid="uid://c6nabdrga5bq1" path="res://Assets/Tilesets/Buildings/chimney-smoke-chiminey 2 - white smoke.png" id="6_d5gbg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ib6q1"]
 texture = ExtResource("1_qv7p0")
@@ -36663,6 +36664,29 @@ texture = ExtResource("5_3xg8v")
 110:121/0 = 0
 111:121/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tgdjq"]
+texture = ExtResource("6_d5gbg")
+0:0/size_in_atlas = Vector2i(6, 4)
+0:0/animation_speed = 12.0
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/animation_frame_3/duration = 1.0
+0:0/animation_frame_4/duration = 1.0
+0:0/animation_frame_5/duration = 1.0
+0:0/animation_frame_6/duration = 1.0
+0:0/animation_frame_7/duration = 1.0
+0:0/animation_frame_8/duration = 1.0
+0:0/animation_frame_9/duration = 1.0
+0:0/animation_frame_10/duration = 1.0
+0:0/animation_frame_11/duration = 1.0
+0:0/animation_frame_12/duration = 1.0
+0:0/animation_frame_13/duration = 1.0
+0:0/animation_frame_14/duration = 1.0
+0:0/animation_frame_15/duration = 1.0
+0:0/0 = 0
+0:0/0/z_index = 10
+
 [resource]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_ib6q1")
@@ -36670,3 +36694,4 @@ sources/1 = SubResource("TileSetAtlasSource_lhy5p")
 sources/2 = SubResource("TileSetAtlasSource_lnokp")
 sources/3 = SubResource("TileSetAtlasSource_iwb3r")
 sources/4 = SubResource("TileSetAtlasSource_owk8w")
+sources/5 = SubResource("TileSetAtlasSource_tgdjq")
