@@ -1,28 +1,20 @@
 [gd_scene format=3 uid="uid://cv2fbhw4okw8c"]
 
-[ext_resource type="PackedScene" uid="uid://cc40naotsafqb" path="res://Scenes/OverWorld/Towns/01-OlidTown/OlidTownComplements/olid_town_props.tscn" id="1_tbvf2"]
-[ext_resource type="PackedScene" uid="uid://ddnwluma8xnhy" path="res://Scenes/OverWorld/Towns/01-OlidTown/OlidTownComplements/olid_town_terrain.tscn" id="2_a5l51"]
-[ext_resource type="PackedScene" uid="uid://dnvg7ovkn3mnx" path="res://Scenes/OverWorld/Towns/01-OlidTown/OlidTownComplements/olid_town_trees.tscn" id="3_2ep5i"]
-[ext_resource type="PackedScene" uid="uid://dt3se2lgj7abf" path="res://Scenes/OverWorld/Towns/01-OlidTown/OlidTownComplements/olid_town_buildings.tscn" id="4_jyej2"]
-[ext_resource type="PackedScene" uid="uid://ckhgfnl0gtxpn" path="res://Scenes/OverWorld/Guild/Base/guild_base.tscn" id="5_tbvf2"]
+[ext_resource type="PackedScene" uid="uid://cc40naotsafqb" path="res://Scenes/World/OverWorld/Towns/01-OlidTown/OlidTownComplements/olid_town_props.tscn" id="1_tbvf2"]
+[ext_resource type="PackedScene" uid="uid://ddnwluma8xnhy" path="res://Scenes/World/OverWorld/Towns/01-OlidTown/OlidTownComplements/olid_town_terrain.tscn" id="2_a5l51"]
+[ext_resource type="PackedScene" uid="uid://dnvg7ovkn3mnx" path="res://Scenes/World/OverWorld/Towns/01-OlidTown/OlidTownComplements/olid_town_trees.tscn" id="3_2ep5i"]
+[ext_resource type="PackedScene" uid="uid://dt3se2lgj7abf" path="res://Scenes/World/OverWorld/Towns/01-OlidTown/OlidTownComplements/olid_town_buildings.tscn" id="4_jyej2"]
+[ext_resource type="PackedScene" uid="uid://ckhgfnl0gtxpn" path="res://Scenes/World/OverWorld/Guild/Base/guild_base.tscn" id="5_tbvf2"]
+[ext_resource type="PackedScene" uid="uid://xipcx4hn3tlb" path="res://Scenes/Characters/01-Auren/auren.tscn" id="6_wgoi8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tbvf2"]
 size = Vector2(109, 1019)
 
 [node name="OlidTown" type="Node2D" unique_id=1615414329]
 
-[node name="Cold" type="CanvasModulate" parent="." unique_id=773369380]
-color = Color(0.78596914, 0.9480968, 0.88890874, 1)
-
-[node name="Tiles" type="Node" parent="." unique_id=256366897]
-
-[node name="OlidTownTerrain" parent="Tiles" unique_id=1808268403 instance=ExtResource("2_a5l51")]
-
-[node name="OlidTownBuildings" parent="Tiles" unique_id=841682739 instance=ExtResource("4_jyej2")]
-
-[node name="OlidTownTrees" parent="Tiles" unique_id=2039791237 instance=ExtResource("3_2ep5i")]
-
-[node name="OlidTownProps" parent="Tiles" unique_id=1415010410 instance=ExtResource("1_tbvf2")]
+[node name="Auren" parent="." unique_id=591992097 instance=ExtResource("6_wgoi8")]
+z_index = 1
+position = Vector2(-190, 891)
 
 [node name="Guild" type="Node" parent="." unique_id=588147209]
 
@@ -60,3 +52,15 @@ position = Vector2(91, 1624)
 position = Vector2(44.5, 499.5)
 shape = SubResource("RectangleShape2D_tbvf2")
 debug_color = Color(1, 0, 0, 1)
+
+[node name="Cold" type="CanvasModulate" parent="." unique_id=773369380]
+color = Color(0.78596914, 0.9480968, 0.88890874, 1)
+
+[node name="OlidTownTerrain" parent="." unique_id=1808268403 instance=ExtResource("2_a5l51")]
+position = Vector2(139, -161)
+
+[node name="OlidTownBuildings" parent="." unique_id=841682739 instance=ExtResource("4_jyej2")]
+
+[node name="OlidTownTrees" parent="." unique_id=2039791237 instance=ExtResource("3_2ep5i")]
+
+[node name="OlidTownProps" parent="." unique_id=1415010410 instance=ExtResource("1_tbvf2")]
