@@ -754,6 +754,7 @@ animations = [{
 height = 44.0
 
 [node name="Auren" type="CharacterBody2D" unique_id=981482255]
+z_index = 1
 script = ExtResource("1_or176")
 walk_speed = 60.0
 run_speed = 120.0
