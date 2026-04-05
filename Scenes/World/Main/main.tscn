@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bd586nr53sobp"]
+
+[ext_resource type="Script" uid="uid://cwn3tqmuwo3sx" path="res://Scenes/World/Main/WordManager/world_manager.gd" id="1_lxx8u"]
+[ext_resource type="PackedScene" uid="uid://xipcx4hn3tlb" path="res://Scenes/Characters/01-Auren/auren.tscn" id="1_v3ocd"]
+[ext_resource type="PackedScene" uid="uid://cv2fbhw4okw8c" path="res://Scenes/World/OverWorld/Towns/01-OlidTown/olid_town.tscn" id="2_hqov5"]
+
+[node name="Main" type="Node2D" unique_id=1627112523]
+
+[node name="WorldManager" type="Node2D" parent="." unique_id=1843247394]
+script = ExtResource("1_lxx8u")
+
+[node name="MapContainer" type="Node2D" parent="WorldManager" unique_id=363311859]
+
+[node name="OlidTown" parent="WorldManager/MapContainer" unique_id=1615414329 instance=ExtResource("2_hqov5")]
+position = Vector2(53, -142)
+
+[node name="Auren" parent="." unique_id=981482255 instance=ExtResource("1_v3ocd")]
+position = Vector2(-65, 402)

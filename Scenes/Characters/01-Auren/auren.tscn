@@ -753,7 +753,7 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7p0vw"]
 height = 44.0
 
-[node name="Auren" type="CharacterBody2D" unique_id=981482255]
+[node name="Auren" type="CharacterBody2D" unique_id=981482255 groups=["Auren"]]
 z_index = 1
 script = ExtResource("1_or176")
 walk_speed = 60.0

@@ -1,18 +1,15 @@
 [gd_scene format=3 uid="uid://c0w54p0qces3j"]
 
-[ext_resource type="PackedScene" uid="uid://xipcx4hn3tlb" path="res://Scenes/Characters/01-Auren/auren.tscn" id="2_qggrg"]
 [ext_resource type="PackedScene" uid="uid://b7ckejaj55r5o" path="res://Scenes/World/OverWorld/Wilderness/01-OlidForest/OlidForestComplements/olid_forest_terrain.tscn" id="3_kha47"]
 [ext_resource type="PackedScene" uid="uid://bikphfd37ulal" path="res://Scenes/World/OverWorld/Wilderness/01-OlidForest/OlidForestComplements/olid_forest_buildings.tscn" id="4_8e70d"]
 [ext_resource type="PackedScene" uid="uid://bi87jyn5u7iq1" path="res://Scenes/World/OverWorld/Wilderness/01-OlidForest/OlidForestComplements/olid_forest_trees.tscn" id="4_q2qkh"]
 [ext_resource type="PackedScene" uid="uid://b1h2n7ml684yu" path="res://Scenes/World/OverWorld/Wilderness/01-OlidForest/OlidForestComplements/olid_forest_props.tscn" id="5_qggrg"]
+[ext_resource type="PackedScene" uid="uid://8lywjo747ojj" path="res://Scenes/World/Tools/teleport.tscn" id="6_kha47"]
 
 [node name="OlidForest" type="Node2D" unique_id=417284729]
 
 [node name="Cold" type="CanvasModulate" parent="." unique_id=1217476778]
 color = Color(0.78596914, 0.9480968, 0.88890874, 1)
-
-[node name="Auren" parent="." unique_id=981482255 instance=ExtResource("2_qggrg")]
-position = Vector2(-45, 461)
 
 [node name="OlidForestTerrain" parent="." unique_id=1693088623 instance=ExtResource("3_kha47")]
 
@@ -21,3 +18,15 @@ position = Vector2(-45, 461)
 [node name="OlidForestTrees" parent="." unique_id=1344701284 instance=ExtResource("4_q2qkh")]
 
 [node name="OlidForestProps" parent="." unique_id=1362183458 instance=ExtResource("5_qggrg")]
+
+[node name="Spawns" type="Node" parent="." unique_id=910739389]
+
+[node name="FromOlidTown" type="Marker2D" parent="Spawns" unique_id=1934161854]
+position = Vector2(-42, 78)
+
+[node name="Teleports" type="Node" parent="." unique_id=1505137323]
+
+[node name="Teleport" parent="Teleports" unique_id=1129498923 instance=ExtResource("6_kha47")]
+position = Vector2(0, -27)
+target_scene_path = "res://Scenes/World/OverWorld/Towns/01-OlidTown/olid_town.tscn"
+spawn_name = "FromOlidForest"

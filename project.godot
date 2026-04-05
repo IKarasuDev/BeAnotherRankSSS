@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Be Another Rank SSS"
+run/main_scene="uid://bd586nr53sobp"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
@@ -19,6 +20,11 @@ config/icon="res://icon.svg"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
+
+[global_group]
+
+Auren=""
+teleports=""
 
 [input]
 
