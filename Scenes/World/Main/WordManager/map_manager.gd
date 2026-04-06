@@ -2,6 +2,7 @@ extends Node2D
 
 @onready var map_container = $MapContainer
 @onready var player = $"../Auren"
+@onready var transition = $"../Transition"
 
 var current_map: Node
 
@@ -57,9 +58,25 @@ func _connect_teleports():
 # EVENTO TELEPORT
 # --------------------------------------------------
 func _on_teleport_requested(scene: PackedScene, spawn: String):
-	call_deferred("load_map", scene, spawn)
+	_change_map_with_transition(scene, spawn)
 
-# --------------------------------------------------
+func _change_map_with_transition(scene: PackedScene, spawn: String) -> void:
+	await transition.fade_in(1)
+	
+	await load_map(scene, spawn)
+	
+	var cam = player.get_node("Camera2D")
+	
+	cam.position_smoothing_enabled = false
+	cam.reset_smoothing()
+	cam.force_update_scroll()
+	
+	await get_tree().process_frame
+	
+	cam.position_smoothing_enabled = true
+	await transition.fade_out(1)
+
+# --------------------------------------------------s
 # POSICIONAR PLAYER
 # --------------------------------------------------
 func _place_player(spawn_name: String):
