@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://xipcx4hn3tlb" path="res://Scenes/Characters/01-Auren/auren.tscn" id="1_v3ocd"]
 [ext_resource type="PackedScene" uid="uid://cv2fbhw4okw8c" path="res://Scenes/World/OverWorld/Towns/01-OlidTown/olid_town.tscn" id="2_hqov5"]
 
-[node name="Main" type="Node2D" unique_id=1627112523]
+[node name="Main" type="Node" unique_id=287273447]
 
 [node name="WorldManager" type="Node2D" parent="." unique_id=1843247394]
 script = ExtResource("1_lxx8u")

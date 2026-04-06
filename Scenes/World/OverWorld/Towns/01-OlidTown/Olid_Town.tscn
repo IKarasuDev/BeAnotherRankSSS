@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dnvg7ovkn3mnx" path="res://Scenes/World/OverWorld/Towns/01-OlidTown/OlidTownComplements/olid_town_trees.tscn" id="3_2ep5i"]
 [ext_resource type="PackedScene" uid="uid://dt3se2lgj7abf" path="res://Scenes/World/OverWorld/Towns/01-OlidTown/OlidTownComplements/olid_town_buildings.tscn" id="4_jyej2"]
 [ext_resource type="PackedScene" uid="uid://ckhgfnl0gtxpn" path="res://Scenes/World/OverWorld/Guild/Base/guild_base.tscn" id="5_tbvf2"]
-[ext_resource type="PackedScene" uid="uid://8lywjo747ojj" path="res://Scenes/World/Tools/teleport.tscn" id="7_tufq2"]
+[ext_resource type="PackedScene" uid="uid://8lywjo747ojj" path="res://Scenes/Tools/teleport.tscn" id="7_tufq2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tbvf2"]
 size = Vector2(109, 1019)
@@ -49,9 +49,6 @@ position = Vector2(44.5, 499.5)
 shape = SubResource("RectangleShape2D_tbvf2")
 debug_color = Color(1, 0, 0, 1)
 
-[node name="Cold" type="CanvasModulate" parent="." unique_id=773369380]
-color = Color(0.78596914, 0.9480968, 0.88890874, 1)
-
 [node name="OlidTownTerrain" parent="." unique_id=1808268403 instance=ExtResource("2_a5l51")]
 position = Vector2(139, -161)
 
@@ -72,3 +69,6 @@ position = Vector2(-205, 1927)
 position = Vector2(-213, 1990)
 target_scene_path = "res://Scenes/World/OverWorld/Wilderness/01-OlidForest/olid_forest.tscn"
 spawn_name = "FromOlidTown"
+
+[node name="Cold" type="CanvasModulate" parent="." unique_id=773369380]
+color = Color(0.78596914, 0.9480968, 0.88890874, 1)

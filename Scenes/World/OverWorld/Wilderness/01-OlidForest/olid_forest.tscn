@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bikphfd37ulal" path="res://Scenes/World/OverWorld/Wilderness/01-OlidForest/OlidForestComplements/olid_forest_buildings.tscn" id="4_8e70d"]
 [ext_resource type="PackedScene" uid="uid://bi87jyn5u7iq1" path="res://Scenes/World/OverWorld/Wilderness/01-OlidForest/OlidForestComplements/olid_forest_trees.tscn" id="4_q2qkh"]
 [ext_resource type="PackedScene" uid="uid://b1h2n7ml684yu" path="res://Scenes/World/OverWorld/Wilderness/01-OlidForest/OlidForestComplements/olid_forest_props.tscn" id="5_qggrg"]
-[ext_resource type="PackedScene" uid="uid://8lywjo747ojj" path="res://Scenes/World/Tools/teleport.tscn" id="6_kha47"]
+[ext_resource type="PackedScene" uid="uid://8lywjo747ojj" path="res://Scenes/Tools/teleport.tscn" id="6_kha47"]
 
 [node name="OlidForest" type="Node2D" unique_id=417284729]
 
