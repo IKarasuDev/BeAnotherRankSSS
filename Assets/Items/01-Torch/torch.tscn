@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://0s31p1ng5jup"]
+
+[ext_resource type="Script" uid="uid://cxgh3ylb0vbj3" path="res://Assets/Items/01-Torch/torch.gd" id="1_6oh8c"]
+[ext_resource type="Texture2D" uid="uid://dnrygkyue7kdn" path="res://Assets/Items/01-Torch/Torch Animated.png" id="1_bmaac"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6oh8c"]
+atlas = ExtResource("1_bmaac")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_thljv"]
+atlas = ExtResource("1_bmaac")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kcmcx"]
+atlas = ExtResource("1_bmaac")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xcoa1"]
+atlas = ExtResource("1_bmaac")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a273d"]
+atlas = ExtResource("1_bmaac")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kvjbv"]
+atlas = ExtResource("1_bmaac")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2acn"]
+atlas = ExtResource("1_bmaac")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o53wb"]
+atlas = ExtResource("1_bmaac")
+region = Rect2(192, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cyfwn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6oh8c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_thljv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kcmcx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xcoa1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a273d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kvjbv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2acn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o53wb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bmaac"]
+size = Vector2(8, 10)
+
+[sub_resource type="Gradient" id="Gradient_6oh8c"]
+offsets = PackedFloat32Array(0, 0.7696001)
+colors = PackedColorArray(0.9816001, 0.9816001, 0.9816001, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_thljv"]
+gradient = SubResource("Gradient_6oh8c")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="Torch" type="StaticBody2D" unique_id=386787154]
+script = ExtResource("1_6oh8c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1549318622]
+scale = Vector2(0.625, 0.625)
+sprite_frames = SubResource("SpriteFrames_cyfwn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1547105233]
+shape = SubResource("RectangleShape2D_bmaac")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1134865688]
+position = Vector2(1.4305115e-06, 2.3841858e-06)
+color = Color(0.99999994, 0.597598, 0.31739247, 1)
+energy = 0.5
+texture = SubResource("GradientTexture2D_thljv")

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bu2xxtp7ja00q" path="res://Scenes/Tools/teleport.gd" id="1_bks8w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y2iha"]
-size = Vector2(248.25, 42.5)
+size = Vector2(47.125, 42.5)
 
 [node name="Teleport" type="Area2D" unique_id=1129498923 groups=["teleports"]]
 collision_layer = 3

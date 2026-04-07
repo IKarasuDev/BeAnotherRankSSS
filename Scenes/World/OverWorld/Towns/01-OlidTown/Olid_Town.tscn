@@ -63,11 +63,19 @@ position = Vector2(139, -161)
 [node name="FromOlidForest" type="Marker2D" parent="Spawns" unique_id=15238440]
 position = Vector2(-205, 1927)
 
+[node name="FromAurensHouse" type="Marker2D" parent="Spawns" unique_id=162692532]
+position = Vector2(48, 929)
+
 [node name="Teleports" type="Node" parent="." unique_id=2062339352]
 
 [node name="Teleport" parent="Teleports" unique_id=1129498923 instance=ExtResource("7_tufq2")]
-position = Vector2(-213, 1990)
+position = Vector2(-205, 1986)
 target_scene_path = "res://Scenes/World/OverWorld/Wilderness/01-OlidForest/olid_forest.tscn"
+spawn_name = "FromOlidTown"
+
+[node name="Teleport2" parent="Teleports" unique_id=590990964 instance=ExtResource("7_tufq2")]
+position = Vector2(48, 875)
+target_scene_path = "res://Scenes/World/OverWorld/indoors/01-AurensHouse/aurens_house.tscn"
 spawn_name = "FromOlidTown"
 
 [node name="Cold" type="CanvasModulate" parent="." unique_id=773369380]

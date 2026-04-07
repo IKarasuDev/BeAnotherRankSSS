@@ -22,7 +22,7 @@ color = Color(0.78596914, 0.9480968, 0.88890874, 1)
 [node name="Spawns" type="Node" parent="." unique_id=910739389]
 
 [node name="FromOlidTown" type="Marker2D" parent="Spawns" unique_id=1934161854]
-position = Vector2(-42, 78)
+position = Vector2(0, 45)
 
 [node name="Teleports" type="Node" parent="." unique_id=1505137323]
 

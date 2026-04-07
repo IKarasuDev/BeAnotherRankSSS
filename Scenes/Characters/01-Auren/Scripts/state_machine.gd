@@ -48,7 +48,7 @@ var last_direction: String = "front"
 # INICIALIZACIÓN
 # -------------------------
 
-func initialize(body: CharacterBody2D) -> void:
+func initialize(_body: CharacterBody2D) -> void:
 	# Actualmente no usamos directamente el body,
 	# pero se deja el parámetro para futura expansión
 	# (ataques, rotaciones, acceso a velocity, etc.).

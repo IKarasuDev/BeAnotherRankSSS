@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c1xvgulibvijs" path="res://Scenes/UI/01-transition/transition.tscn" id="1_b6jsj"]
 [ext_resource type="Script" uid="uid://cwn3tqmuwo3sx" path="res://Scenes/World/Main/WordManager/map_manager.gd" id="1_lxx8u"]
 [ext_resource type="PackedScene" uid="uid://xipcx4hn3tlb" path="res://Scenes/Characters/01-Auren/auren.tscn" id="1_v3ocd"]
-[ext_resource type="PackedScene" uid="uid://cv2fbhw4okw8c" path="res://Scenes/World/OverWorld/Towns/01-OlidTown/olid_town.tscn" id="2_hqov5"]
+[ext_resource type="PackedScene" uid="uid://hcxv0wjo6nd4" path="res://Scenes/World/OverWorld/indoors/01-AurensHouse/aurens_house.tscn" id="4_b6jsj"]
 
 [node name="Main" type="Node2D" unique_id=1265296206]
 
@@ -14,8 +14,7 @@ script = ExtResource("1_lxx8u")
 
 [node name="MapContainer" type="Node2D" parent="MapManager" unique_id=363311859]
 
-[node name="OlidTown" parent="MapManager/MapContainer" unique_id=1615414329 instance=ExtResource("2_hqov5")]
-position = Vector2(53, -142)
+[node name="AurensHouse" parent="MapManager/MapContainer" unique_id=2124821020 instance=ExtResource("4_b6jsj")]
 
 [node name="Auren" parent="." unique_id=981482255 instance=ExtResource("1_v3ocd")]
-position = Vector2(-65, 402)
+position = Vector2(197, 286)
