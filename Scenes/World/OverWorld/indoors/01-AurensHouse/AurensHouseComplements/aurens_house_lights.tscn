@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dawkdpmqkye0a"]
+
+[ext_resource type="PackedScene" uid="uid://0s31p1ng5jup" path="res://Assets/Items/01-Torch/torch.tscn" id="1_hqblh"]
+
+[sub_resource type="Gradient" id="Gradient_is6hc"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ykq28"]
+gradient = SubResource("Gradient_is6hc")
+width = 86
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+
+[node name="AurensHouseLights" type="Node2D" unique_id=769861609]
+
+[node name="Torch" parent="." unique_id=386787154 instance=ExtResource("1_hqblh")]
+z_index = 1
+position = Vector2(64, 56)
+
+[node name="Torch2" parent="." unique_id=1941817623 instance=ExtResource("1_hqblh")]
+z_index = 1
+position = Vector2(216, 56)
+
+[node name="Torch3" parent="." unique_id=2119406479 instance=ExtResource("1_hqblh")]
+z_index = 1
+position = Vector2(240, 232)
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=669527704]
+position = Vector2(-144, -40)
+color = Color(0.6926402, 0.6368311, 0.28199652, 1)
+texture = SubResource("GradientTexture2D_ykq28")

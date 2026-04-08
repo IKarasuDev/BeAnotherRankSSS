@@ -4,7 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://bikphfd37ulal" path="res://Scenes/World/OverWorld/Wilderness/01-OlidForest/OlidForestComplements/olid_forest_buildings.tscn" id="4_8e70d"]
 [ext_resource type="PackedScene" uid="uid://bi87jyn5u7iq1" path="res://Scenes/World/OverWorld/Wilderness/01-OlidForest/OlidForestComplements/olid_forest_trees.tscn" id="4_q2qkh"]
 [ext_resource type="PackedScene" uid="uid://b1h2n7ml684yu" path="res://Scenes/World/OverWorld/Wilderness/01-OlidForest/OlidForestComplements/olid_forest_props.tscn" id="5_qggrg"]
-[ext_resource type="PackedScene" uid="uid://8lywjo747ojj" path="res://Scenes/Tools/teleport.tscn" id="6_kha47"]
+[ext_resource type="PackedScene" uid="uid://8lywjo747ojj" path="res://Scenes/Tools/01-Teleport/teleport.tscn" id="6_kha47"]
+[ext_resource type="PackedScene" uid="uid://7ca60i12xvs4" path="res://Scenes/Tools/02-MapConfig/MapConfig.tscn" id="6_q2qkh"]
 
 [node name="OlidForest" type="Node2D" unique_id=417284729]
 
@@ -30,3 +31,6 @@ position = Vector2(0, 45)
 position = Vector2(0, -27)
 target_scene_path = "res://Scenes/World/OverWorld/Towns/01-OlidTown/olid_town.tscn"
 spawn_name = "FromOlidForest"
+
+[node name="MapConfig" parent="." unique_id=912918470 instance=ExtResource("6_q2qkh")]
+neighbor_maps = Array[String](["res://Scenes/World/OverWorld/Towns/01-OlidTown/olid_town.tscn"])

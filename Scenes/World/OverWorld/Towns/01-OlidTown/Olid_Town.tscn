@@ -5,7 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://dnvg7ovkn3mnx" path="res://Scenes/World/OverWorld/Towns/01-OlidTown/OlidTownComplements/olid_town_trees.tscn" id="3_2ep5i"]
 [ext_resource type="PackedScene" uid="uid://dt3se2lgj7abf" path="res://Scenes/World/OverWorld/Towns/01-OlidTown/OlidTownComplements/olid_town_buildings.tscn" id="4_jyej2"]
 [ext_resource type="PackedScene" uid="uid://ckhgfnl0gtxpn" path="res://Scenes/World/OverWorld/Guild/Base/guild_base.tscn" id="5_tbvf2"]
-[ext_resource type="PackedScene" uid="uid://8lywjo747ojj" path="res://Scenes/Tools/teleport.tscn" id="7_tufq2"]
+[ext_resource type="PackedScene" uid="uid://7ca60i12xvs4" path="res://Scenes/Tools/02-MapConfig/MapConfig.tscn" id="7_krldf"]
+[ext_resource type="PackedScene" uid="uid://8lywjo747ojj" path="res://Scenes/Tools/01-Teleport/teleport.tscn" id="7_tufq2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tbvf2"]
 size = Vector2(109, 1019)
@@ -76,7 +77,10 @@ spawn_name = "FromOlidTown"
 [node name="Teleport2" parent="Teleports" unique_id=590990964 instance=ExtResource("7_tufq2")]
 position = Vector2(48, 875)
 target_scene_path = "res://Scenes/World/OverWorld/indoors/01-AurensHouse/aurens_house.tscn"
-spawn_name = "FromOlidTown"
+spawn_name = "ToAurenHouse"
 
 [node name="Cold" type="CanvasModulate" parent="." unique_id=773369380]
 color = Color(0.78596914, 0.9480968, 0.88890874, 1)
+
+[node name="MapConfig" parent="." unique_id=912918470 instance=ExtResource("7_krldf")]
+neighbor_maps = Array[String](["res://Scenes/World/OverWorld/indoors/01-AurensHouse/aurens_house.tscn", "res://Scenes/World/OverWorld/Wilderness/01-OlidForest/olid_forest.tscn"])
