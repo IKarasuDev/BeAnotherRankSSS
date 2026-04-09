@@ -6,16 +6,16 @@
 [ext_resource type="PackedScene" uid="uid://dt3se2lgj7abf" path="res://Scenes/World/OverWorld/Towns/01-OlidTown/OlidTownComplements/olid_town_buildings.tscn" id="4_jyej2"]
 [ext_resource type="PackedScene" uid="uid://ckhgfnl0gtxpn" path="res://Scenes/World/OverWorld/Guild/Base/guild_base.tscn" id="5_tbvf2"]
 [ext_resource type="PackedScene" uid="uid://7ca60i12xvs4" path="res://Scenes/Tools/02-MapConfig/MapConfig.tscn" id="7_krldf"]
+[ext_resource type="Script" uid="uid://c1e2qqr00rrbj" path="res://Scenes/Tools/03-RampArea/ramp_area.gd" id="7_pb3nj"]
 [ext_resource type="PackedScene" uid="uid://8lywjo747ojj" path="res://Scenes/Tools/01-Teleport/teleport.tscn" id="7_tufq2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tbvf2"]
 size = Vector2(109, 1019)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_84w3o"]
+size = Vector2(92, 29.25)
+
 [node name="OlidTown" type="Node2D" unique_id=1615414329]
-
-[node name="Guild" type="Node" parent="." unique_id=588147209]
-
-[node name="GuildBase" parent="Guild" unique_id=462952813 instance=ExtResource("5_tbvf2")]
 
 [node name="Limits" type="Node" parent="." unique_id=972093888]
 
@@ -59,6 +59,8 @@ position = Vector2(139, -161)
 
 [node name="OlidTownProps" parent="." unique_id=1415010410 instance=ExtResource("1_tbvf2")]
 
+[node name="GuildBase" parent="." unique_id=462952813 instance=ExtResource("5_tbvf2")]
+
 [node name="Spawns" type="Node" parent="." unique_id=1372171646]
 
 [node name="FromOlidForest" type="Marker2D" parent="Spawns" unique_id=15238440]
@@ -78,6 +80,20 @@ spawn_name = "FromOlidTown"
 position = Vector2(48, 875)
 target_scene_path = "res://Scenes/World/OverWorld/indoors/01-AurensHouse/aurens_house.tscn"
 spawn_name = "ToAurenHouse"
+
+[node name="Ramp" type="Node" parent="." unique_id=1405165773]
+
+[node name="Area2D" type="Area2D" parent="Ramp" unique_id=1124786086]
+position = Vector2(-79, 254)
+script = ExtResource("7_pb3nj")
+uphill_multiplier = 0.8
+downhill_multiplier = 1.2
+zoom_uphill = 0.1
+zoom_downhill = -0.1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ramp/Area2D" unique_id=712501630]
+shape = SubResource("RectangleShape2D_84w3o")
+debug_color = Color(0.627451, 0.1254902, 0.9411765, 1)
 
 [node name="Cold" type="CanvasModulate" parent="." unique_id=773369380]
 color = Color(0.78596914, 0.9480968, 0.88890874, 1)

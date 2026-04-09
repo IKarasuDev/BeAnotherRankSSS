@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://dfukajqe0qbm4" path="res://Scenes/Characters/01-Auren/Sprites/WALK/walk_left.png" id="11_iywf5"]
 [ext_resource type="Texture2D" uid="uid://q6bthtffgb3" path="res://Scenes/Characters/01-Auren/Sprites/WALK/walk_right.png" id="12_3qiq8"]
 [ext_resource type="Script" uid="uid://d36ad75ypdso3" path="res://Scenes/Characters/01-Auren/Scripts/state_machine.gd" id="14_7eckq"]
+[ext_resource type="Script" uid="uid://bmgw06x5ds170" path="res://Scenes/Characters/01-Auren/Scripts/ramp_controller.gd" id="15_5f64n"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dsn5f"]
 atlas = ExtResource("1_m122n")
@@ -756,8 +757,6 @@ height = 44.0
 [node name="Auren" type="CharacterBody2D" unique_id=981482255 groups=["Auren"]]
 z_index = 1
 script = ExtResource("1_or176")
-walk_speed = 60.0
-run_speed = 120.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2033695676]
 scale = Vector2(1.2625, 1.2625)
@@ -773,7 +772,11 @@ shape = SubResource("CapsuleShape2D_7p0vw")
 [node name="StateMachine" type="Node" parent="." unique_id=1694911805]
 script = ExtResource("14_7eckq")
 
+[node name="RampController" type="Node" parent="." unique_id=1129397333]
+script = ExtResource("15_5f64n")
+camera_path = NodePath("../Camera2D")
+visual_path = NodePath("../AnimatedSprite2D")
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=466658044]
 zoom = Vector2(1.5, 1.5)
 position_smoothing_enabled = true
-position_smoothing_speed = 2.0

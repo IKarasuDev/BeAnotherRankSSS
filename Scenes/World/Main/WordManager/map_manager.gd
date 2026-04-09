@@ -112,6 +112,7 @@ func _swap_map(scene: PackedScene, spawn_name: String):
 	var cam = player.get_node("Camera2D")
 	cam.position_smoothing_enabled = false
 	cam.reset_smoothing()
+	cam.zoom = Vector2(1.5, 1.5)
 	cam.force_update_scroll()
 	
 	await get_tree().process_frame
