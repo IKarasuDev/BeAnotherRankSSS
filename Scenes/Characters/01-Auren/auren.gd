@@ -36,6 +36,3 @@ func reset_ramp():
 
 func add_camera_zoom(delta: float):
 	ramp_controller.add_camera_zoom(delta)
-
-func add_scale(delta: float):
-	ramp_controller.add_scale(delta)
