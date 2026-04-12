@@ -60,6 +60,8 @@ position = Vector2(139, -161)
 [node name="OlidTownProps" parent="." unique_id=1415010410 instance=ExtResource("1_tbvf2")]
 
 [node name="GuildBase" parent="." unique_id=462952813 instance=ExtResource("5_tbvf2")]
+z_index = 4
+position = Vector2(-31, 47)
 
 [node name="Spawns" type="Node" parent="." unique_id=1372171646]
 
