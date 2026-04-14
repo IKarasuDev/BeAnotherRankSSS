@@ -97,8 +97,5 @@ zoom_downhill = -0.1
 shape = SubResource("RectangleShape2D_84w3o")
 debug_color = Color(0.627451, 0.1254902, 0.9411765, 1)
 
-[node name="Cold" type="CanvasModulate" parent="." unique_id=773369380]
-color = Color(0.78596914, 0.9480968, 0.88890874, 1)
-
 [node name="MapConfig" parent="." unique_id=912918470 instance=ExtResource("7_krldf")]
 neighbor_maps = Array[String](["res://Scenes/World/OverWorld/indoors/01-AurensHouse/aurens_house.tscn", "res://Scenes/World/OverWorld/Wilderness/01-OlidForest/olid_forest.tscn"])
