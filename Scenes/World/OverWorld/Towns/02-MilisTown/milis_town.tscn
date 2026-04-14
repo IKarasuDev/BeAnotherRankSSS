@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://b5k8entkbjdl7" path="res://Scenes/World/OverWorld/Towns/02-MilisTown/MilistTownComplements/milis_town_buildings.tscn" id="2_j5yka"]
 [ext_resource type="PackedScene" uid="uid://ckhgfnl0gtxpn" path="res://Scenes/World/OverWorld/Guild/Base/guild_base.tscn" id="3_j5yka"]
 [ext_resource type="PackedScene" uid="uid://c7juvkc5tfeh0" path="res://Scenes/World/OverWorld/Towns/02-MilisTown/MilistTownComplements/milis_town_trees.tscn" id="4_ch2w4"]
+[ext_resource type="PackedScene" uid="uid://8lywjo747ojj" path="res://Scenes/Tools/01-Teleport/teleport.tscn" id="5_2161e"]
 
 [node name="MilisTown" type="Node2D" unique_id=1866358619]
 
@@ -15,3 +16,16 @@
 position = Vector2(-1118, 968)
 
 [node name="MilisTownTrees" parent="." unique_id=604044728 instance=ExtResource("4_ch2w4")]
+
+[node name="Teleports" type="Node" parent="." unique_id=1459843537]
+
+[node name="Teleport" parent="Teleports" unique_id=1129498923 instance=ExtResource("5_2161e")]
+position = Vector2(296, 168)
+scale = Vector2(1, 7)
+target_scene_path = "res://Scenes/World/OverWorld/Wilderness/01-OlidForest/olid_forest.tscn"
+spawn_name = "FromMilisTown"
+
+[node name="Spawns" type="Node" parent="." unique_id=1302043417]
+
+[node name="FromOlidForest" type="Marker2D" parent="Spawns" unique_id=390447695]
+position = Vector2(219, 205)

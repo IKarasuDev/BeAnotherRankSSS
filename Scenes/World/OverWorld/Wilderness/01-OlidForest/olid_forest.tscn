@@ -29,11 +29,19 @@ size = Vector2(78, 43)
 [node name="FromOlidTown" type="Marker2D" parent="Spawns" unique_id=1934161854]
 position = Vector2(0, 45)
 
+[node name="FromMilisTown" type="Marker2D" parent="Spawns" unique_id=233068051]
+
 [node name="Teleports" type="Node" parent="." unique_id=1505137323]
 
 [node name="Teleport" parent="Teleports" unique_id=1129498923 instance=ExtResource("6_kha47")]
 position = Vector2(0, -27)
 target_scene_path = "res://Scenes/World/OverWorld/Towns/01-OlidTown/olid_town.tscn"
+spawn_name = "FromOlidForest"
+
+[node name="Teleport2" parent="Teleports" unique_id=1730418243 instance=ExtResource("6_kha47")]
+position = Vector2(-832, 1656.0001)
+scale = Vector2(1, 7)
+target_scene_path = "res://Scenes/World/OverWorld/Towns/02-MilisTown/milis_town.tscn"
 spawn_name = "FromOlidForest"
 
 [node name="MapConfig" parent="." unique_id=912918470 instance=ExtResource("6_q2qkh")]
