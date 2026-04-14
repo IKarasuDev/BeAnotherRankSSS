@@ -30,6 +30,7 @@ size = Vector2(78, 43)
 position = Vector2(0, 45)
 
 [node name="FromMilisTown" type="Marker2D" parent="Spawns" unique_id=233068051]
+position = Vector2(-742, 1654)
 
 [node name="Teleports" type="Node" parent="." unique_id=1505137323]
 

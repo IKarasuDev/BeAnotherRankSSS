@@ -8,14 +8,8 @@
 
 [node name="MilisTown" type="Node2D" unique_id=1866358619]
 
-[node name="MilisTownTerrain" parent="." unique_id=116746344 instance=ExtResource("1_72dea")]
-
-[node name="MilisTownBuildings" parent="." unique_id=617630035 instance=ExtResource("2_j5yka")]
-
 [node name="GuildBase" parent="." unique_id=462952813 instance=ExtResource("3_j5yka")]
 position = Vector2(-1118, 968)
-
-[node name="MilisTownTrees" parent="." unique_id=604044728 instance=ExtResource("4_ch2w4")]
 
 [node name="Teleports" type="Node" parent="." unique_id=1459843537]
 
@@ -29,3 +23,9 @@ spawn_name = "FromMilisTown"
 
 [node name="FromOlidForest" type="Marker2D" parent="Spawns" unique_id=390447695]
 position = Vector2(219, 205)
+
+[node name="MilisTownTerrain" parent="." unique_id=116746344 instance=ExtResource("1_72dea")]
+
+[node name="MilisTownBuildings" parent="." unique_id=617630035 instance=ExtResource("2_j5yka")]
+
+[node name="MilisTownTrees" parent="." unique_id=604044728 instance=ExtResource("4_ch2w4")]
