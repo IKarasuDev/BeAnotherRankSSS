@@ -755,7 +755,7 @@ animations = [{
 height = 44.0
 
 [node name="Auren" type="CharacterBody2D" unique_id=981482255 groups=["Auren"]]
-z_index = 1
+z_index = 2
 script = ExtResource("1_or176")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2033695676]

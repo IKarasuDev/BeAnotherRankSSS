@@ -50,19 +50,6 @@ position = Vector2(44.5, 499.5)
 shape = SubResource("RectangleShape2D_tbvf2")
 debug_color = Color(1, 0, 0, 1)
 
-[node name="OlidTownTerrain" parent="." unique_id=1808268403 instance=ExtResource("2_a5l51")]
-position = Vector2(139, -161)
-
-[node name="OlidTownBuildings" parent="." unique_id=841682739 instance=ExtResource("4_jyej2")]
-
-[node name="OlidTownTrees" parent="." unique_id=2039791237 instance=ExtResource("3_2ep5i")]
-
-[node name="OlidTownProps" parent="." unique_id=1415010410 instance=ExtResource("1_tbvf2")]
-
-[node name="GuildBase" parent="." unique_id=462952813 instance=ExtResource("5_tbvf2")]
-z_index = 4
-position = Vector2(-31, 47)
-
 [node name="Spawns" type="Node" parent="." unique_id=1372171646]
 
 [node name="FromOlidForest" type="Marker2D" parent="Spawns" unique_id=15238440]
@@ -70,6 +57,9 @@ position = Vector2(-205, 1909)
 
 [node name="FromAurensHouse" type="Marker2D" parent="Spawns" unique_id=162692532]
 position = Vector2(48, 929)
+
+[node name="FromOlidTownGuild" type="Marker2D" parent="Spawns" unique_id=1041686228]
+position = Vector2(-31, 78)
 
 [node name="Teleports" type="Node" parent="." unique_id=2062339352]
 
@@ -82,6 +72,12 @@ spawn_name = "FromOlidTown"
 position = Vector2(48, 875)
 target_scene_path = "res://Scenes/World/OverWorld/indoors/01-AurensHouse/aurens_house.tscn"
 spawn_name = "ToAurenHouse"
+
+[node name="Teleport3" parent="Teleports" unique_id=490280079 instance=ExtResource("7_tufq2")]
+z_index = 6
+position = Vector2(-31, 18)
+target_scene_path = "res://Scenes/World/OverWorld/Towns/01-OlidTown/guild_olid_town.tscn"
+spawn_name = "OlidTownGuild"
 
 [node name="Ramp" type="Node" parent="." unique_id=1405165773]
 
@@ -99,3 +95,15 @@ debug_color = Color(0.627451, 0.1254902, 0.9411765, 1)
 
 [node name="MapConfig" parent="." unique_id=912918470 instance=ExtResource("7_krldf")]
 neighbor_maps = Array[String](["res://Scenes/World/OverWorld/indoors/01-AurensHouse/aurens_house.tscn", "res://Scenes/World/OverWorld/Wilderness/01-OlidForest/olid_forest.tscn"])
+
+[node name="OlidTownBuildings" parent="." unique_id=841682739 instance=ExtResource("4_jyej2")]
+
+[node name="GuildBase" parent="." unique_id=462952813 instance=ExtResource("5_tbvf2")]
+z_index = 1
+position = Vector2(-31, 47)
+
+[node name="OlidTownTrees" parent="." unique_id=2039791237 instance=ExtResource("3_2ep5i")]
+
+[node name="OlidTownProps" parent="." unique_id=1415010410 instance=ExtResource("1_tbvf2")]
+
+[node name="OlidTownTerrain" parent="." unique_id=1808268403 instance=ExtResource("2_a5l51")]
