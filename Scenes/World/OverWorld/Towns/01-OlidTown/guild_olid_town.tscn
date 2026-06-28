@@ -30,7 +30,7 @@ target_scene_path = "res://Scenes/World/OverWorld/Towns/01-OlidTown/Olid_Town.ts
 spawn_name = "FromOlidTownGuild"
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1240619876]
-color = Color(0.58891106, 0.58891106, 0.5889109, 1)
+color = Color(0.7054653, 0.7054653, 0.7054653, 1)
 
 [node name="Lights" type="Node" parent="." unique_id=1852788566]
 
