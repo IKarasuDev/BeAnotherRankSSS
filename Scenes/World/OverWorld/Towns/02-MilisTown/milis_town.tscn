@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://ckhgfnl0gtxpn" path="res://Scenes/World/OverWorld/Guild/Base/guild_base.tscn" id="3_j5yka"]
 [ext_resource type="PackedScene" uid="uid://c7juvkc5tfeh0" path="res://Scenes/World/OverWorld/Towns/02-MilisTown/MilistTownComplements/milis_town_trees.tscn" id="4_ch2w4"]
 [ext_resource type="PackedScene" uid="uid://8lywjo747ojj" path="res://Scenes/Tools/01-Teleport/teleport.tscn" id="5_2161e"]
-[ext_resource type="PackedScene" uid="uid://xipcx4hn3tlb" path="res://Scenes/Characters/01-Auren/auren.tscn" id="6_mo455"]
 
 [node name="MilisTown" type="Node2D" unique_id=1866358619]
 
@@ -31,6 +30,3 @@ position = Vector2(219, 205)
 [node name="MilisTownBuildings" parent="." unique_id=617630035 instance=ExtResource("2_j5yka")]
 
 [node name="MilisTownTrees" parent="." unique_id=604044728 instance=ExtResource("4_ch2w4")]
-
-[node name="Auren" parent="." unique_id=981482255 instance=ExtResource("6_mo455")]
-position = Vector2(-1124, 1282)
