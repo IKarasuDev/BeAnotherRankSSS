@@ -778,5 +778,5 @@ camera_path = NodePath("../Camera2D")
 visual_path = NodePath("../AnimatedSprite2D")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=466658044]
-zoom = Vector2(1.5, 1.5)
+zoom = Vector2(1.7, 1.7)
 position_smoothing_enabled = true
