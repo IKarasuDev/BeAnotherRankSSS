@@ -11,6 +11,7 @@
 [node name="MilisTownTerrain" parent="Tiles" unique_id=116746344 instance=ExtResource("1_jdrhm")]
 
 [node name="MilisTownBuildings" parent="Tiles" unique_id=617630035 instance=ExtResource("2_j5yka")]
+z_index = 7
 
 [node name="Auren" parent="." unique_id=981482255 instance=ExtResource("2_jdrhm")]
-position = Vector2(1364, 202)
+position = Vector2(-559, 788)
